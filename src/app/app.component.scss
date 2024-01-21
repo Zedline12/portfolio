@@ -47,7 +47,8 @@ body{
   color:white;
 }
 .tech .col-3{
- padding:25px;
+ padding:15px;
+ padding-top:0px;
  margin:10px;
 }
 @keyframes fadeInOutAnimation {
@@ -541,4 +542,5 @@ $tiles: 5;
 .brand .col-3 ,.brand h4,.brand h5{
 background-color: $grey;
 color:black;
+
 }
