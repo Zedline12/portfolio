@@ -1,0 +1,42 @@
+<div id="hero" class="hero row d-flex justify-content-center" style="margin-right:11em;">
+    <div class="herosmall col-xl-9 col-12 top d-flex justify-content-center align-items-center"style=" margin-bottom:5em;margin-top:15em;">
+      <div style="margin-left:8em;" class="marg row d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-xl-start justify-content-center">
+          <h1 *ngIf="innerWidth>485" [ngClass]="innerWidth<=1200 ?'text-center':''"  style="margin-bottom:0.3em;text-wrap: balance;max-width:800px;">I am <span class="text-center" style="color:#7300A5;">Abdallah Mohamed </span> and i love designing</h1>
+          <h1 *ngIf="innerWidth<=485" class="text-center">I am <br/><span class="text-center" style="color:#7300A5;">Abdallah Mohamed <br/></span> and i love designing</h1>
+        </div>
+        <div class="col-12 d-flex justify-content-xl-start justify-content-center">
+          <h5 [ngClass]="innerWidth<=1200 ?'text-center':''" style="color:#535253;opacity: 0.9;text-wrap: balance;">Welcome to my offical Portfolio Website Where I put all my work related to my designs and many more.</h5>
+        </div>
+        <div class="col-12 d-flex justify-content-xl-start justify-content-center"style="margin-top:3em;margin-left:1px;">
+          <button class="dwcv "style="" role="button">Download CV</button>
+        </div>
+        <div class="col-12" style="">
+         
+        <div class="row d-flex justify-content-start">
+          <div class="col-3">
+            <div class=" socialrow row" style="margin-top:3em;">
+              <div class="col-4">
+                <i class="bi bi-facebook" ></i>
+              </div>
+              <div class="col-4">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <div class="col-4">
+                <i class="bi bi-linkedin"></i>
+              </div>
+            </div>
+          </div>
+           
+        </div>
+        </div>
+      </div>
+
+       </div>
+    <div class="imgbox col-xl-3 col-12 d-flex " style="padding:0px;">
+        <img *ngIf="innerWidth>1200" class="bw"   src="assets/images/main/graph.png">
+         <img *ngIf="innerWidth>1200" class="model" src="assets/images/main/model.png"/>
+         <img *ngIf="innerWidth<=1200" src="assets/images/main/graph.png" class="model"/>
+         <img *ngIf="innerWidth<=1200" class="model" src="assets/images/main/model2.png"/>
+    </div>
+</div>

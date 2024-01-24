@@ -1,4 +1,5 @@
 var inport=0
+
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
@@ -10,6 +11,10 @@ $.fn.isInViewport = function() {
 };
 $(window).on('resize scroll', function() {
 if ($('#hero').isInViewport()) {
+  if($(".mywork").isInViewport()){
+    $(".mywork").addClass("myworkmation")
+    $(".hr").addClass("hrmation")
+  }
   if(inport==0){
     function animateValue(obj, start, end, duration) {
       let startTimestamp = null;
@@ -31,7 +36,13 @@ if ($('#hero').isInViewport()) {
    if($('#first').isInViewport()){
     $('.box').addClass('boxfade')
    }
+  
+  
 } 
+else if($(".mywork").isInViewport()){
+  
+  $(".mywork").addClass("myworkmation")
+}
 else {
     // do something else
 }

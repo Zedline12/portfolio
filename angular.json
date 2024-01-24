@@ -36,6 +36,7 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
               "src/assets/js/main.js",
+              "src/assets/js/control.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
             ],
             "server": "src/main.server.ts",

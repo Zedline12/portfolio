@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row">
+        <nav>
+         <div class="row">
+            <div class="col-xl-3 col-4 "> 
+               <img class="logo" src="assets/images/main/bedologo.png">
+            </div>
+            <div class="col-xl-9 col-4 d-flex justify-content-end align-items-center">
+               <div class="dropdown" *ngIf="innerWidth<1318">
+                 
+                  <i class="bi bi-list " style="color:black;" data-bs-toggle="dropdown" ></i>
+                  <ul class="dropdown-menu dropdown-menu-center-m">
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                    <li><a class="dropdown-item" href="#">Featured</a></li>
+                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                  </ul>
+                </div>
+               <div class="menu" *ngIf="innerWidth>1318">
+                  <ul class="mul">
+                     
+                     <li><a class="anav" href="#">About</a></li>
+                     <li><a  class="anav"href="#">Featured</a></li>
+                     <li><a class="anav" href="#">Portfolio</a></li>
+                     <li><a class="anav"  href="#">Blog</a></li>
+                     <li><a class="anav" href="#">Contact</a></li>
+                     
+                  </ul>
+                  
+               </div>
+            </div>
+         </div>
+       </nav>
+      </div>
+</div>

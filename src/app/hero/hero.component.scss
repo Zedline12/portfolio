@@ -1,0 +1,131 @@
+
+
+$purple:#7300A5;
+$grey:#d9d9d9;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("../../assets/scss/hero.scss");
+
+h1,h2,h3,h4,h5,p{
+   color:#171717;
+  }
+  .top h1{
+    font-size:5em;
+    font-family: 'Anton', sans-serif;
+  }
+   .anton{
+    font-family: 'Anton', sans-serif;
+   }
+  .bw{
+    width:150%;
+    height:100%;
+    padding-top:13em;
+    margin-top: 0em;
+   
+  }
+
+.model{
+  position:absolute;
+  width:550px;
+  top:140px;
+  right:100px;
+  
+}
+/*Nav Start*/
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    margin-top: 2em;
+}
+
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+    margin-top:1em;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    transition: 1.5s;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+/* CSS */
+.dwcv {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: $purple;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-flex;
+    font-size:1.5em;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  .col-4 .bi{
+    color:#515152;
+    font-size: 1.5em;
+  }
+  .dwcv:hover,
+  .dwcv:focus {
+    background-color: #892FAF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+  .dwcv:hover {
+    transform: translateY(-1px);
+  }
+  
+  .dwcv:active {
+    background-color: #892FAF;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+  }
+  h5{
+    max-width:70%;
+  }

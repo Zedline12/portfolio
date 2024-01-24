@@ -1,0 +1,90 @@
+/*nav*/
+@media(max-width:371px){
+    .logo{
+     width:50px !important;
+     margin:10px 30px !important;
+    }
+ }
+ 
+ @media (min-width:400px){
+    
+ }
+ @media (min-width: 458px) {
+   
+   }
+  
+ @media (min-width: 576px) {
+   
+   }
+ 
+ @media (min-width:580px){
+    
+ }
+ 
+ @media (min-width: 768px)  { 
+     .sul li{
+        
+         padding: 0px 20px !important;
+     }
+     
+ }
+ @media(max-width:731px) and (min-width:372px){
+     .logo{
+         width:50px !important;
+         margin:10px 40px !important;
+     }
+ }
+ @media (max-width:769px) and (min-width:732px){
+     .logo{
+        width:50px !important;
+        margin: 20px 40px !important;
+     }
+     .sul li{
+        margin:0px !important;
+         padding: 0px 20px !important;
+     }
+     .sul li a i{
+         font-size:0.8em;
+      }
+     
+ }
+ @media(max-width:900px) and (min-width:770px){
+     .logo{
+         margin:20px 80px !important;
+     }
+ }
+ @media (min-width: 1200px) {
+     nav .mul li {
+         display: inline-block;
+         padding: 5px 30px;;
+     }
+     .sul li{
+        
+         padding: 0px 30px !important;
+     }
+    
+  }
+  @media  (max-width:1383px) { 
+     nav .mul li a {
+         font-size:18px !important;
+     }
+     nav .sul li a {
+         font-size:1.6em !important;
+     }
+    
+  }
+ 
+ @media (min-width: 1584px) {
+     nav .mul li {
+         display: inline-block;
+         padding: 5px 40px;;
+     }
+     
+ 
+     /*font change*/
+     nav .mul li a {
+         font-size:20px;
+     }
+   }
+ 
+ /*end nav*/

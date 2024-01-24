@@ -36,6 +36,7 @@ var position = window.pageYOffset || (document.documentElement || document.body.
         scrolleddown=1
         
         $(".anav").css("color","white")
+        $(".whbox").css("background-color","white")
         } 
     } else {
       //upwards
