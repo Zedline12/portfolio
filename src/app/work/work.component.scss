@@ -1,0 +1,53 @@
+@import url("../../assets/scss/work.scss");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+.primg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),60%,rgba(0, 0, 0, 0.5)), url("/assets/images/main/talha.jpg");
+    height:400px;
+    width:100%;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .primg2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),60%,rgba(0, 0, 0, 0.5)), url("/assets/images/main/mohamedport.jpg");
+    height:400px;
+    width:100%;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .talha{
+    background-color:#0d0d0d;
+    margin:50px;
+    padding:0px;
+   
+  } 
+  .biz{
+    background-color:#0d0d0d;
+    margin:50px;
+    padding:0px;
+    
+  }
+  .btn { 
+    cursor:pointer;
+     margin:10px;
+    border: 1px solid #828282; 
+    background-color: transparent; 
+    height: 40px; 
+    width: 120px; 
+    color: #828282; 
+    font-size: 0.9em; 
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+    
+  } 
+  .selct{
+    background-color: whitesmoke;
+    border-radius: 50px;
+    padding:5px 15px;
+    font-family: 500;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }
