@@ -1,100 +1,90 @@
 var inport=0
-
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
 
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
-
+  
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
-$(window).on('resize scroll', function() {
-if ($('#hero').isInViewport()) {
-  if($(".mywork").isInViewport()){
-    $(".mywork").addClass("myworkmation")
-    $(".hr").addClass("hrmation")
-  }
-  if(inport==0){
-    function animateValue(obj, start, end, duration) {
-      let startTimestamp = null;
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        obj.innerHTML = Math.floor(progress * (end - start) + start);
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        }
-      };
-      window.requestAnimationFrame(step);
+const isInViewport=function(element){
+  var elementTop = element.offset().top;
+      var elementBottom = elementTop + element.outerHeight();
+    
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+    
+      return elementBottom > viewportTop && elementTop < viewportBottom;
+}
+window.onload=function(){
+  var position = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+  $(window).scroll(function() {
+    //men foq le ta7t
+    if($("#desimg").length){
+      if($("#desimg").isInViewport()){
+        $("#desrow").addClass("fadeinout")
+      }
     }
-    const obj = document.getElementById("value");
-    animateValue(obj, 29, 60,2000);
-    inport=1
+    var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+    if (scrollTop > position) {
+      //downwards
+      if (scrollTop>=3043) {
+        
+        document.body.style.background ='black';
+        scrolleddown=1
+        
+        $(".anav").css("color","white")
+        $(".whbox").css("background-color","white")
+        } 
+    } else {
+      //upwards
+      if(scrollTop<=3000){
+        document.body.style.background ='#d9d9d9';
+        $(".anav").css("color","black")
+       scrolledtop=1;
+      }
+    }
+    position = scrollTop;
+   
+ 
+ 
+      if($("#loader").length){
+        if($("#loader").isInViewport()) {
+          $loader.classList.remove('loader--active')
+        }
+    
+      }
+    });
+  if($("#hero").length){
+   
   }
-   $('.rheader').addClass("headerfade")
-   if($('#first').isInViewport()){
-    $('.box').addClass('boxfade')
-   }
   
+  $(window).on('resize scroll', function() {
+    console.log($("#hero").length)
+    console.log($("#mywork").length)
+    if($("#hero").length && $("#mywork").length){
+      if ($('#hero').isInViewport()) {
+        if($("#mywork").isInViewport()){
+          console.log("in")
+          $(".mywork").addClass("myworkmation")
+          $(".hr").addClass("hrmation")
+        }
+
+      } 
+      else if($(".mywork").isInViewport()){
+        
+        $(".mywork").addClass("myworkmation")
+      }
+      else {
+          // do something else
+      }
+    }
   
-} 
-else if($(".mywork").isInViewport()){
-  
-  $(".mywork").addClass("myworkmation")
+  });
 }
-else {
-    // do something else
-}
-});
+
 
   $(document).ready(function(){
-    
-   const myChart = new Chart(document.getElementById("chart").getContext('2d'), {
-  type: 'line',
-  data: {
-    labels: ["sunday", "monday", "tuesday",
-    "wednesday", "thursday", "friday", "saturday"],
-    datasets: [{
-      label: 'Last week',
-      
-      backgroundColor: 'rgba(161, 198, 247, 1)',
-      borderColor: 'rgb(47, 128, 237)',
-      data: [3000, 4000, 2000, 5000, 8000, 6000, 2000],
-    }]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true,
-        }
-      }]
-    }
-  },
-});
-
-//Bar Chart
-const myBarChart = new Chart(document.getElementById("barchart").getContext('2d'), {
-  type: 'bar',
-  data: {
-    labels: ["rice", "yam", "tomato", "potato",
-    "beans", "maize", "oil"],
-    datasets: [{
-      label: 'food Items',
-      backgroundColor: 'rgba(161, 198, 247, 1)',
-      borderColor: 'rgb(47, 128, 237)',
-      data: [300, 400, 200, 500, 800, 900, 200],
-    }]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true,
-        }
-      }]
-    }
-  },
-});
+  
   })

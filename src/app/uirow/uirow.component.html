@@ -1,0 +1,52 @@
+<div id="desrow"  class="row d-flex  justify-content-center" style="margin-top:20em;margin-bottom:10em;">
+    <div *ngIf="innerWidth>1200" class="col-xl-2" >
+      <img class="dots" style="width:300px;" src="assets/images/main/dots.png"/>
+    </div>
+    <div *ngIf="innerWidth>1200" class="col-xl-3" style="position: relative;">
+      <img class="desimg" id="desimg" style="position:absolute;width:350px;margin-left:5em;margin-bottom:2em;bottom:15px;" src="assets/images/main/des2.png"/>
+      <img class="lapimg" style="width:350px;margin-left:15em;height:110%;" src="assets/images/main/des.png"/>
+    </div>
+
+
+    <div  class="rightbox  col-xl-7 col-10 d-flex justify-content-xl-end justify-content-center">
+      <div *ngIf="innerWidth>768" class="rightboxx"  style="background-image: linear-gradient(#7300A5,#7f258f);width:95%;" class="">
+        <div class="textrow row" style="margin-top:7em;margin-left:7em;">
+          <div  *ngIf="innerWidth>1200" class="col-12"><h1 [ngClass]="innerWidth<=1200 ?'text-center' :''" class="anton " style="color:#dbdbdb;font-size:3.5em;">Achieving Awesome UI/UX<br/> Designs.</h1></div>
+          <div *ngIf="innerWidth<=1200" class="col-12"><h1 [ngClass]="innerWidth<=1200 ?'text-center' :''" class="anton " style="color:#dbdbdb;font-size:3.5em;text-wrap:balance;">Achieving Awesome UI/UX Designs.</h1></div>
+          <div *ngIf="innerWidth<=1200" class="d-flex justify-content-center"><hr style="color:white;width:70%;"/></div>
+          <div style="z-index:2;" class="col-12 d-flex justify-content-center">
+            <h5  [ngClass]="innerWidth<=1200 ?'text-center' :''" style="color:#dbdbdb;font-size:1.1em;opacity:0.9;margin-top:1em;text-wrap: balance;">Let me help your website design to the next level,contact me to  build your amazing website so I can help you acheive your goals. </h5>
+           
+          </div>
+          <div class="col-12 d-flex justify-content-xl-start justify-content-center">
+            <!-- HTML !-->
+<button class="button-5 " style="margin-top:2.5em;" role="button">Get Started <i class="bi bi-arrow-right" style="margin-left:1em;"></i></button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--if width <= 768   (mobile)-->
+      <div *ngIf="innerWidth<=768" class="rightboxmob"  style="width:95%;">
+        <div class="textrow row" style="margin-top:7em;margin-left:7em;">
+          <div  *ngIf="innerWidth>1200" class="col-12"><h1 [ngClass]="innerWidth<=1200 ?'text-center' :''" class="anton " style="color:#dbdbdb;font-size:3.5em;">Achieving Awesome UI/UX<br/> Designs.</h1></div>
+          <div *ngIf="innerWidth<=1200" class="col-12"><h1 [ngClass]="innerWidth<=1200 ?'text-center' :''" class="anton " style="color:#dbdbdb;font-size:3.5em;text-wrap:balance;">Achieving Awesome UI/UX Designs.</h1></div>
+          <div *ngIf="innerWidth<=1200" class="d-flex justify-content-center"><hr style="color:white;width:70%;"/></div>
+          <div style="z-index:2;" class="col-12 d-flex justify-content-center">
+            <h5  [ngClass]="innerWidth<=1200 ?'text-center' :''" style="color:#dbdbdb;font-size:1.1em;opacity:0.9;margin-top:1em;text-wrap: balance;">Let me help your website design to the next level,contact me to  build your amazing website so I can help you acheive your goals. </h5>
+           
+          </div>
+          <div class="col-12 d-flex justify-content-xl-start justify-content-center">
+            <!-- HTML !-->
+<button class="button-5 " style="margin-top:2.5em;" role="button">Get Started <i class="bi bi-arrow-right" style="margin-left:1em;"></i></button>
+
+          </div>
+        </div>
+      </div>
+      
+      <img *ngIf="innerWidth<=1200 && innerWidth>768" class="desimgbox" id="desimg" style="position:absolute;" src="assets/images/main/des2.png"/>
+      <img *ngIf="innerWidth<=1200 && innerWidth>768" class="lapimgbox" style="position:absolute; " src="assets/images/main/des.png"/>
+    </div>
+    
+   </div>
