@@ -6,10 +6,13 @@
           <h1 *ngIf="innerWidth<=485" class="text-center">I am <br/><span class="text-center" style="color:#7300A5;">Abdallah Mohamed <br/></span> and i love designing</h1>
         </div>
         <div class="col-12 d-flex justify-content-xl-start justify-content-center">
-          <h5 [ngClass]="innerWidth<=1200 ?'text-center':''" style="color:#535253;opacity: 0.9;text-wrap: balance;">Welcome to my offical Portfolio Website Where I put all my work related to my designs and many more.</h5>
+          <h5 *ngIf="innerWidth>485" [ngClass]="innerWidth<=1200 ?'text-center':''" style="color:#535253;opacity: 0.9;text-wrap: balance;">Welcome to my offical Portfolio Website Where I put all my work related to my designs and many more.</h5>
         </div>
         <div class="col-12 d-flex justify-content-xl-start justify-content-center"style="margin-top:3em;margin-left:1px;">
           <button class="dwcv "style="" role="button">Download CV</button>
+        </div>
+        <div class="col-12 mt-3 mb-3">
+          <h5 *ngIf="innerWidth<=485" [ngClass]="innerWidth<=1200 ?'text-center':''" style="color:#535253;opacity: 0.9;text-wrap: balance;">Welcome to my offical Portfolio Website Where I put all my work related to my designs and many more.</h5>
         </div>
         <div class="col-12" style="">
          

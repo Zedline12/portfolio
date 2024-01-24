@@ -1,4 +1,35 @@
-@media(max-width:348px){
+@media(max-width:325px){
+    .herosmall{
+        margin-top:10em !important;
+    }
+    h1{
+        font-size:2.1em !important; 
+    }
+    .socialrow{
+        margin-top:0px !important;
+    }
+    .model{
+        width:270px !important;
+        top: 50% !important; /* Position Y halfway in */
+    left: 50% !important; /* Position X halfway in */
+    transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
+    }
+    h5{
+        margin-top:0.5em !important;
+        max-width: 100% !important;
+    }
+    .dwcv{
+        margin-top:17em !important;
+        font-size:1em !important;
+    }
+    .hero{
+        margin-right:0px !important;
+    }
+    .marg{
+        margin-left:0px !important;
+    }
+}
+@media(max-width:348px)and (min-width:326px){
     .herosmall{
         margin-top:10em !important;
     }
@@ -10,7 +41,7 @@
     }
     .model{
         width:310px !important;
-        top: 53% !important; /* Position Y halfway in */
+        top: 54% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
@@ -19,7 +50,8 @@
         max-width: 100% !important;
     }
     .dwcv{
-        margin-top:13em !important;
+        margin-top:17em !important;
+        font-size:1em !important;
     }
     .hero{
         margin-right:0px !important;
@@ -30,7 +62,7 @@
 }
 @media(max-width:375px) and (min-width:349px){
     .herosmall{
-        margin-top:10em !important;
+        margin-top:9em !important;
     }
     h1{
         font-size:2.5em !important; 
@@ -40,7 +72,7 @@
     }
     .model{
         width:330px !important;
-        top: 53% !important; /* Position Y halfway in */
+        top: 55% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
@@ -69,8 +101,8 @@
         margin-top:0px !important;
     }
     .model{
-        width:330px !important;
-        top: 53% !important; /* Position Y halfway in */
+        width:350px !important;
+        top: 59% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
@@ -91,7 +123,7 @@
 
 @media(max-width:485px) and (min-width:416px){
     .herosmall{
-        margin-top:11em !important;
+        margin-top:8em !important;
     }
     h1{
         font-size:3em !important; 
@@ -100,8 +132,8 @@
         margin-top:0px !important;
     }
     .model{
-        width:350px !important;
-        top: 57% !important; /* Position Y halfway in */
+        width:400px !important;
+        top: 60% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
@@ -131,7 +163,7 @@
     }
     .model{
         width:400px !important;
-        top: 52% !important; /* Position Y halfway in */
+        top: 65% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
@@ -139,7 +171,7 @@
         max-width: 100% !important;
     }
     .dwcv{
-        margin-top:18em !important;
+        margin-top:17em !important;
     }
     .hero{
         margin-right:0px !important;
@@ -161,7 +193,7 @@
     }
     .model{
         width:450px !important;
-        top: 56% !important; /* Position Y halfway in */
+        top: 70% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
@@ -169,7 +201,7 @@
         max-width: 90% !important;
     }
     .dwcv{
-        margin-top:19em !important;
+        margin-top:18em !important;
     }
     .hero{
         margin-right:0px !important;
@@ -190,7 +222,7 @@
     }
     .model{
         width:500px !important;
-        top: 62% !important; /* Position Y halfway in */
+        top: 80% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
@@ -209,7 +241,7 @@
 }
 @media (max-width:900px) and (min-width:751px){
     .herosmall{
-        margin-top:13em !important;
+        margin-top:15em !important;
     }
     h1{
         font-size:4.5em !important; 
@@ -219,7 +251,7 @@
     }
     .model{
         width:550px !important;
-        top: 66% !important; /* Position Y halfway in */
+        top: 90% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
@@ -238,14 +270,14 @@
 }
 @media(max-width:1200px) and (min-width:901px){
     h1{
-        font-size:5em !important; 
+        font-size:4.5em !important; 
     }
     .socialrow{
         margin-top:0px !important;
     }
     .model{
-        width:600px !important;
-        top: 73% !important; /* Position Y halfway in */
+        width:550px !important;
+        top: 90% !important; /* Position Y halfway in */
     left: 50% !important; /* Position X halfway in */
     transform: translate(-50%,-50%) !important; /* Move it halfway back(x,y) */
     }
